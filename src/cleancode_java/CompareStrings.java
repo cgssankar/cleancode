@@ -13,9 +13,12 @@ public class CompareStrings {
   }
 
   public CompareStrings() {
-    String[] names = { "Bosch", "Robert", "Bengalore", "Lenovo" };
-    IPradicateFunction pradicate = new PradicateFunction();
-    System.out.println(queryStrings(names, pradicate));
+    String[] names = { "Bosch", "Robert", "Bengalore", "Lenovo", "LenovoB" };
+    IPradicateFunction pradicateStartsWithB = new PradicateFunctionStringStartsWithB();
+    System.out.println(queryStrings(names, pradicateStartsWithB));
+
+    IPradicateFunction pradicateEndsWithB = new PradicateFunctionStringEndsWithB();
+    System.out.println(queryStrings(names, pradicateEndsWithB));
   }
 
   public static List<String> queryStrings(final String[] names, final IPradicateFunction pradicate) {

@@ -1,7 +1,7 @@
 package cleancode_java;
 
 
-public class PradicateFunction implements IPradicateFunction {
+public class PradicateFunctionStringStartsWithB implements IPradicateFunction {
 
   @Override
   public boolean apply(final String item) {
