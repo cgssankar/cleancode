@@ -14,18 +14,25 @@ public class CompareStrings {
 
   public CompareStrings() {
     String[] names = { "Bosch", "Robert", "Bengalore", "Lenovo", "LenovoB" };
-    IPredicateFunction pradicateStartsWith = new PredicateFunctionStringStartsWithCharacter();
-    System.out.println(queryStrings(names, pradicateStartsWith, 'B'));
+    PredicateFunctionStringStartsWithCharacter predicateStartsWith = new PredicateFunctionStringStartsWithCharacter();
+    predicateStartsWith.setStartsWith('B');
+    System.out.println(queryStrings(names, predicateStartsWith));
 
-    IPredicateFunction pradicateEndsWith = new PredicateFunctionStringEndsWithCharacter();
-    System.out.println(queryStrings(names, pradicateEndsWith, 'B'));
+    PredicateFunctionStringEndsWithCharacter predicateEndsWith = new PredicateFunctionStringEndsWithCharacter();
+    predicateEndsWith.setEndsWith('B');
+    System.out.println(queryStrings(names, predicateEndsWith));
+
+    PredicateFunctionStringLength prediacateLength = new PredicateFunctionStringLength();
+    prediacateLength.setLenth(6);
+    System.out.println(queryStrings(names, prediacateLength));
+
+
   }
 
-  public static List<String> queryStrings(final String[] names, final IPredicateFunction pradicate,
-      final char character) {
+  public static List<String> queryStrings(final String[] names, final IPredicateFunction pradicate) {
     java.util.List<String> result = new ArrayList<>();
     for (String name : names) {
-      if (pradicate.apply(name, character)) {
+      if (pradicate.apply(name)) {
         result.add(name);
       }
     }
