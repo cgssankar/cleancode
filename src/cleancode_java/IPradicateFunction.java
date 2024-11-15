@@ -4,5 +4,5 @@ package cleancode_java;
 @FunctionalInterface
 public interface IPradicateFunction {
 
-  boolean apply(String item);
+  boolean apply(String item, char character);
 }
