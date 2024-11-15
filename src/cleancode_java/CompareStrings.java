@@ -14,11 +14,11 @@ public class CompareStrings {
 
   public CompareStrings() {
     String[] names = { "Bosch", "Robert", "Bengalore", "Lenovo", "LenovoB" };
-    IPredicateFunction pradicateStartsWithB = new PredicateFunctionStringStartsWithCharacter();
-    System.out.println(queryStrings(names, pradicateStartsWithB, 'B'));
+    IPredicateFunction pradicateStartsWith = new PredicateFunctionStringStartsWithCharacter();
+    System.out.println(queryStrings(names, pradicateStartsWith, 'B'));
 
-    IPredicateFunction pradicateEndsWithB = new PredicateFunctionStringEndsWithCharacter();
-    System.out.println(queryStrings(names, pradicateEndsWithB, 'B'));
+    IPredicateFunction pradicateEndsWith = new PredicateFunctionStringEndsWithCharacter();
+    System.out.println(queryStrings(names, pradicateEndsWith, 'B'));
   }
 
   public static List<String> queryStrings(final String[] names, final IPredicateFunction pradicate,
