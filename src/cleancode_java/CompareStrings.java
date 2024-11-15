@@ -1,11 +1,7 @@
-/*
- * Copyright (c) ETAS GmbH 2024. All rights reserved.
- */
 package cleancode_java;
 
 import java.util.ArrayList;
 import java.util.List;
-
 
 /**
  *
@@ -18,18 +14,17 @@ public class CompareStrings {
 
   public CompareStrings() {
     String[] names = { "Bosch", "Robert", "Bengalore", "Lenovo" };
-    System.out.println(getStringsStartsWithB(names));
+    IPradicateFunction pradicate = new PradicateFunction();
+    queryStrings(names, pradicate);
   }
 
-  private List<String> getStringsStartsWithB(final String[] names) {
+  public static List<String> queryStrings(final String[] names, final IPradicateFunction pradicate) {
     java.util.List<String> result = new ArrayList<>();
     for (String name : names) {
-      if (name.startsWith("B")) {
+      if (pradicate.apply(name)) {
         result.add(name);
       }
     }
     return result;
   }
-
-
 }
