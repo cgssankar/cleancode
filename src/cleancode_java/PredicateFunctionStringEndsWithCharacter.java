@@ -4,7 +4,7 @@ package cleancode_java;
 /**
  *
  */
-public class PradicateFunctionStringEndsWithCharacter implements IPradicateFunction {
+public class PredicateFunctionStringEndsWithCharacter implements IPredicateFunction {
 
   /**
    * {@inheritDoc}

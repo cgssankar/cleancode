@@ -1,7 +1,7 @@
 package cleancode_java;
 
 
-public class PradicateFunctionStringStartsWithCharacter implements IPradicateFunction {
+public class PredicateFunctionStringStartsWithCharacter implements IPredicateFunction {
 
   @Override
   public boolean apply(final String item, final char character) {
