@@ -15,7 +15,7 @@ public class CompareStrings {
   public CompareStrings() {
     String[] names = { "Bosch", "Robert", "Bengalore", "Lenovo" };
     IPradicateFunction pradicate = new PradicateFunction();
-    queryStrings(names, pradicate);
+    System.out.println(queryStrings(names, pradicate));
   }
 
   public static List<String> queryStrings(final String[] names, final IPradicateFunction pradicate) {
