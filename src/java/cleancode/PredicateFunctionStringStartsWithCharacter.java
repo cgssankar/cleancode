@@ -1,4 +1,4 @@
-package cleancode_java;
+package java.cleancode;
 
 
 public class PredicateFunctionStringStartsWithCharacter implements IPredicateFunction {

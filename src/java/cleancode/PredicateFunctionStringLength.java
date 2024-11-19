@@ -1,7 +1,7 @@
 /*
  * Copyright (c) ETAS GmbH 2024. All rights reserved.
  */
-package cleancode_java;
+package java.cleancode;
 
 
 /**
