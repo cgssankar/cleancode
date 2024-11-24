@@ -1,5 +1,5 @@
 
-package java.cleancode;
+package cleancode;
 
 //Java implementation of the given C++ program
 //Interface definitions

@@ -1,4 +1,4 @@
-package java.cleancode;
+package cleancode;
 
 
 @FunctionalInterface

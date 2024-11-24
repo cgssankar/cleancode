@@ -1,4 +1,4 @@
-package java.cleancode;
+package cleancode;
 
 import java.util.ArrayList;
 import java.util.List;
